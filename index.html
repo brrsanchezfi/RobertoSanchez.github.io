@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="icons\icons8-portafolio-48.png">
     <title>Portafolio</title>
     <!-- Stilos -->
     <style>
@@ -17,7 +18,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        width: 250px; /* Ajusta este valor según tus necesidades */
+        width: 250px; 
         cursor: pointer;
       }
       .text-full {
@@ -37,15 +38,13 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Roberto Sanchez</a>
+        <a class="navbar-brand" href="index.html">Roberto Sanchez</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#">Acerca de mi</a>
             </li>
@@ -57,10 +56,10 @@
                 Proyectos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Data sciense</a></li>
-                <li><a class="dropdown-item" href="#">programation</a></li>
+                <li><a class="dropdown-item" href="section1.html">Programacion</a></li>
+                <li><a class="dropdown-item" href="section2.html"></a>Ciencia de Datos</li>
+                <li><a class="dropdown-item" href="section3.html">Diseño Web</a></li>
                 <!-- <li><hr class="dropdown-divider"></li> -->
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
 
@@ -93,6 +92,25 @@
       </div>
     </div>
 
+
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row g-5">
+        <div class="col-md-6">
+          <h2 class="text-body-emphasis">Educación</h2>
+          <p>Soy Ingeniero Electricista de la Universidad Nacional de Colombia, con pregrados incompletos en Electrónica y algunas materias adelantadas en Sistemas. Además, cuento con un título de Bachiller Técnico en Redes de Computadores.</p>
+
+        </div>
+  
+        <div class="col-md-6">
+          <h2 class="text-body-emphasis">Experiencia Relevante</h2>
+            <p>En el campo tecnológico, he acumulado una valiosa experiencia que me ha permitido adquirir habilidades sólidas y conocimientos fundamentales. Mi trayectoria incluye un enfoque multidimensional que abarca investigación, docencia y liderazgo, lo que me ha brindado una perspectiva integral y una base sólida en este campo en constante evolución.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    
 
     <!-- Skills -->
 
@@ -231,7 +249,7 @@
                 <p class="card-text text-compressed" onclick="toggleText(this)">A lo largo de mi formación, he realizado una lista de proyectos académicos y de código abierto en diversas áreas. Estos proyectos abarcan el uso de Python, Java y Matlab como lenguajes de programación principales. A través de estos proyectos, he aplicado mis conocimientos en cada uno de estos lenguajes para desarrollar soluciones en diferentes dominios y resolver problemas específicos. Estos proyectos han sido una oportunidad valiosa para fortalecer mis habilidades de programación y explorar nuevas tecnologías en cada uno de estos entornos.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>                   
+                    <a href="section1.html"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Ver</button></a>                   
                   </div>
                 </div>
               </div>
@@ -240,14 +258,14 @@
 
           <div class="col">
             <div class="card shadow-sm">
-              <img src="img\3.jpg" alt="Imagen de la tarjeta" class="card-img-top">
+              <img src="img\3.jpg" alt="Imagen de la tarjeta" class="card-img-top"> 
               <div class="card-body">
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Ciencia de datos</h3>
                 <p class="card-text text-compressed" onclick="toggleText(this)">
                   La lista de proyectos en ciencia de datos que he realizado se ha centrado principalmente en el contexto del mercado energético colombiano, con un enfoque académico. Estos proyectos han sido diseñados para aplicar técnicas y herramientas de ciencia de datos con el objetivo de analizar y comprender los patrones y tendencias del mercado energético en Colombia.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <a href="section2.html"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Ver</button></a>
                   </div>
                   
                 </div>
@@ -263,7 +281,7 @@
                 <p class="card-text text-compressed" onclick="toggleText(this)">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <a href="section3.html"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Ver</button></a>
                   </div>
                 </div>
               </div>
@@ -275,8 +293,6 @@
         </div>
       </div>
     </div>
-
-
 
     <!-- footpage -->
     
