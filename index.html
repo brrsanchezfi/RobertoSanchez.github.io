@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Roberto Sanchez</title>
+    <title>Portafolio</title>
+    <!-- Stilos -->
     <style>
       .construction-banner {
         background-color: #f44336;
@@ -11,6 +12,17 @@
         padding: 10px; 
         text-align: center;
         font-size: 18px;
+      }
+      .text-compressed {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 250px; /* Ajusta este valor según tus necesidades */
+        cursor: pointer;
+      }
+      .text-full {
+        white-space: normal;
+        overflow: auto;
       }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -66,14 +78,16 @@
     <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
-          <img src="/pngegg (1).png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          <img src="img\Perfil.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="300"  loading="lazy">
         </div>
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Roberto Sanchez</h1>
           <p class="lead">¡Hola! Soy Roberto Sánchez, ingeniero electricista apasionado por la programación, la ciencia de datos y el desarrollo de software. Con una sólida formación técnica, combino mi conocimiento en ingeniería con mi amor por el software para crear soluciones innovadoras. Soy versátil, comprometido y siempre en busca de nuevos desafíos. ¡Explora mi portafolio y descubre cómo mi pasión impulsa mi trabajo en el campo tecnológico!</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Descargar cv</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Git-Hub</button>
+            <a href="https://www.canva.com/design/DAFQDtzcBCU/B9H3_5tXror6quKK9GjBsg/edit?utm_content=DAFQDtzcBCU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Descargar cv</button></a>
+            <a href="https://github.com/brrsanchezfi"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Git-Hub</button></a>
+            
+            
           </div>
         </div>
       </div>
@@ -90,112 +104,112 @@
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Python</h3>
-            <p>Experiencia en la integración de SGBD e interfaces gráficas utilizando PYQT5, así como en el manejo de librerías para la gestión de conjuntos de datos.</p>
+            <p class="text-compressed" onclick="toggleText(this)">Experiencia en la integración de SGBD e interfaces gráficas utilizando PYQT5, así como en el manejo de librerías para la gestión de conjuntos de datos.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Java</h3>
-            <p>Enfoque principal en programación orientada a objetos (POO) y bases de datos.</p>
+            <p class="text-compressed" onclick="toggleText(this)">Enfoque principal en programación orientada a objetos (POO) y bases de datos.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Matlab</h3>
-            <p>Amplia experiencia y dominio en el uso de las herramientas de Matlab y Simulink. Además, tengo experiencia como instructor en estas aplicaciones en la universidad.</p>
+            <p class="text-compressed" onclick="toggleText(this)">Amplia experiencia y dominio en el uso de las herramientas de Matlab y Simulink. Además, tengo experiencia como instructor en estas aplicaciones en la universidad.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Bases de datos</h3>
-            <p>Experiencia sólida en el manejo de MySQL y SQLite, con un dominio básico en la gestión de DDL, DML y DCL.</p>
+            <p class="text-compressed" onclick="toggleText(this)">Experiencia sólida en el manejo de MySQL y SQLite, con un dominio básico en la gestión de DDL, DML y DCL.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">POO</h3>
-            <p>Mi enfoque de trabajo se centra en el paradigma de la programación orientada a objetos (POO). He desarrollado software utilizando este enfoque de manera consistente, y también tengo experiencia en el manejo de recursividad. </p>
+            <p class="text-compressed" onclick="toggleText(this)">Mi enfoque de trabajo se centra en el paradigma de la programación orientada a objetos (POO). He desarrollado software utilizando este enfoque de manera consistente, y también tengo experiencia en el manejo de recursividad. </p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Estructura de datos</h3>
-            <p>Poseo un dominio básico en estructuras de datos en Java y Python. He implementado estructuras secuenciales y no secuenciales en proyectos, lo que me brinda experiencia práctica en su manejo.</p>
+            <p class="text-compressed" onclick="toggleText(this)">Poseo un dominio básico en estructuras de datos en Java y Python. He implementado estructuras secuenciales y no secuenciales en proyectos, lo que me brinda experiencia práctica en su manejo.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Analisis de datos</h3>
-            <p>Como Ingeniero Electricista, he trabajado con datos energéticos en entornos como Google Colab y MATLAB. Además, he creado propuestas y proyectos académicos enfocados en el ámbito energético, lo que me ha brindado experiencia en el análisis de datos en este campo específico.</p>
+            <p class="text-compressed" onclick="toggleText(this)">Como Ingeniero Electricista, he trabajado con datos energéticos en entornos como Google Colab y MATLAB. Además, he creado propuestas y proyectos académicos enfocados en el ámbito energético, lo que me ha brindado experiencia en el análisis de datos en este campo específico.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Representacion grafica de datos</h3>
-            <p>Poseo experiencia en la visualización de datos utilizando las bibliotecas Matplotlib, Plotly y Seaborn en Python, así como las herramientas de visualización disponibles en MATLAB.</p>
+            <p class="text-compressed" onclick="toggleText(this)">Poseo experiencia en la visualización de datos utilizando las bibliotecas Matplotlib, Plotly y Seaborn en Python, así como las herramientas de visualización disponibles en MATLAB.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Diseño Web</h3>
-            <p>Tengo experiencia en el uso de HTML5 y CSS3 para crear diseños web. También estoy familiarizado con conceptos básicos de JavaScript.</p>
+            <p class="text-compressed" onclick="toggleText(this)">Tengo experiencia en el uso de HTML5 y CSS3 para crear diseños web. También estoy familiarizado con conceptos básicos de JavaScript.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Manejo de framework</h3>
-            <p>Tengo experiencia en el uso y manejo de frameworks en los distintos lenguajes con los que he trabajado. Algunos ejemplos de frameworks con los que estoy familiarizado incluyen Bootstrap para el desarrollo web, Pandas para el análisis de datos en Python, y otros frameworks populares en sus respectivas áreas.</p>
+            <p class="text-compressed" onclick="toggleText(this)">Tengo experiencia en el uso y manejo de frameworks en los distintos lenguajes con los que he trabajado. Algunos ejemplos de frameworks con los que estoy familiarizado incluyen Bootstrap para el desarrollo web, Pandas para el análisis de datos en Python, y otros frameworks populares en sus respectivas áreas.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Algebra lineal</h3>
-            <p>Como ingeniero electricista y tutor de circuitos, tengo una sólida experiencia trabajando y aplicando conceptos de álgebra lineal en mi trabajo. El álgebra lineal es fundamental para el análisis y diseño de circuitos eléctricos, así como para la comprensión de sistemas lineales en general.</p>
+            <p class="text-compressed" onclick="toggleText(this)">Como ingeniero electricista y tutor de circuitos, tengo una sólida experiencia trabajando y aplicando conceptos de álgebra lineal en mi trabajo. El álgebra lineal es fundamental para el análisis y diseño de circuitos eléctricos, así como para la comprensión de sistemas lineales en general.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Estadistica</h3>
-            <p>Conocimientos en estadística descriptiva, inferencia estadística y métodos estocásticos.</p>
+            <p class="text-compressed" onclick="toggleText(this)">Conocimientos en estadística descriptiva, inferencia estadística y métodos estocásticos.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Vision artificial</h3>
-            <p>Experiencia en el campo de la visión artificial, trabajando en un semillero de investigación. He adquirido conocimientos y experiencia en el uso de modelos preentrenados y aplicaciones prácticas utilizando OpenCV.</p>
+            <p class="text-compressed" onclick="toggleText(this)">Experiencia en el campo de la visión artificial, trabajando en un semillero de investigación. He adquirido conocimientos y experiencia en el uso de modelos preentrenados y aplicaciones prácticas utilizando OpenCV.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Machine Learning en MATLAB</h3>
-            <p>He realizado trabajos utilizando la biblioteca especializada de MATLAB en el campo del aprendizaje automático. Tengo experiencia tanto en el entrenamiento supervisado como en el no supervisado.</p>
+            <p class="text-compressed" onclick="toggleText(this)">He realizado trabajos utilizando la biblioteca especializada de MATLAB en el campo del aprendizaje automático. Tengo experiencia tanto en el entrenamiento supervisado como en el no supervisado.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Machine Learning en python</h3>
-            <p>He realizado trabajos en ciencia de datos utilizando Python, específicamente utilizando las bibliotecas scikit-learn, TensorFlow y Keras.</p>
+            <p class="text-compressed" onclick="toggleText(this)">He realizado trabajos en ciencia de datos utilizando Python, específicamente utilizando las bibliotecas scikit-learn, TensorFlow y Keras.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Herramientas de desarrollo</h3>
-            <p>experiencia práctica en el manejo de flujos de trabajo en Git, así como en el uso de los IDEs Visual Studio Code, IntelliJ IDEA y PyCharm. He trabajado con eficiencia en la gestión de ramas, fusiones de código y resolución de conflictos en Git.</p>
+            <p class="text-compressed" onclick="toggleText(this)">experiencia práctica en el manejo de flujos de trabajo en Git, así como en el uso de los IDEs Visual Studio Code, IntelliJ IDEA y PyCharm. He trabajado con eficiencia en la gestión de ramas, fusiones de código y resolución de conflictos en Git.</p>
           </div>
         </div>
       </div>
@@ -214,13 +228,11 @@
               <img src="img\2.jpg" alt="Imagen de la tarjeta" class="card-img-top">
               <div class="card-body">
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Programacion</h3>
-                <p class="card-text">A lo largo de mi formación, he realizado una lista de proyectos académicos y de código abierto en diversas áreas. Estos proyectos abarcan el uso de Python, Java y Matlab como lenguajes de programación principales. A través de estos proyectos, he aplicado mis conocimientos en cada uno de estos lenguajes para desarrollar soluciones en diferentes dominios y resolver problemas específicos. Estos proyectos han sido una oportunidad valiosa para fortalecer mis habilidades de programación y explorar nuevas tecnologías en cada uno de estos entornos.</p>
+                <p class="card-text text-compressed" onclick="toggleText(this)">A lo largo de mi formación, he realizado una lista de proyectos académicos y de código abierto en diversas áreas. Estos proyectos abarcan el uso de Python, Java y Matlab como lenguajes de programación principales. A través de estos proyectos, he aplicado mis conocimientos en cada uno de estos lenguajes para desarrollar soluciones en diferentes dominios y resolver problemas específicos. Estos proyectos han sido una oportunidad valiosa para fortalecer mis habilidades de programación y explorar nuevas tecnologías en cada uno de estos entornos.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">ver</button>
-                    
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>                   
                   </div>
-                  <small class="text-body-secondary">9 mins</small>
                 </div>
               </div>
             </div>
@@ -228,14 +240,14 @@
 
           <div class="col">
             <div class="card shadow-sm">
-              <img src="img\1.jpg" alt="Imagen de la tarjeta" class="card-img-top">
+              <img src="img\3.jpg" alt="Imagen de la tarjeta" class="card-img-top">
               <div class="card-body">
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Ciencia de datos</h3>
-                <p class="card-text"></p>
+                <p class="card-text text-compressed" onclick="toggleText(this)">
+                  La lista de proyectos en ciencia de datos que he realizado se ha centrado principalmente en el contexto del mercado energético colombiano, con un enfoque académico. Estos proyectos han sido diseñados para aplicar técnicas y herramientas de ciencia de datos con el objetivo de analizar y comprender los patrones y tendencias del mercado energético en Colombia.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                   </div>
                   
                 </div>
@@ -247,14 +259,12 @@
             <div class="card shadow-sm">
               <img src="img\1.jpg" alt="Imagen de la tarjeta" class="card-img-top">
               <div class="card-body">
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Diseno web</h3>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Diseño web</h3>
+                <p class="card-text text-compressed" onclick="toggleText(this)">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                   </div>
-                  <small class="text-body-secondary">9 mins</small>
                 </div>
               </div>
             </div>
@@ -287,7 +297,12 @@
       </footer>
     </div>
 
-    
+    <script>
+      function toggleText(element) {
+        element.classList.toggle("text-compressed");
+        element.classList.toggle("text-full");
+      }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
