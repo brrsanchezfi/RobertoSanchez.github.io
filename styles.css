@@ -1,12 +1,12 @@
 
 .text-compressed {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 10%; 
-    cursor: pointer;
-  }
-  .text-full {
-    white-space: normal;
-    overflow: auto;
-  }
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px; /* Ajusta este valor según tus necesidades */
+  cursor: pointer;
+}
+.text-full {
+  white-space: normal;
+  overflow: auto;
+}
