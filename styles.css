@@ -1,12 +1,17 @@
+.construction-banner {
+  background-color: #f44336;
+  color: #fff; 
+  padding: 10px; 
+  text-align: center;
+  font-size: 18px;
+}
 
-.text-compressed {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 200px; /* Ajusta este valor según tus necesidades */
-  cursor: pointer;
+.icon_light{
+  fill: black !important;
+  
+  /* filter: invert(0%) sepia(3%) saturate(0%) hue-rotate(274deg) brightness(107%) contrast(105%); */
 }
-.text-full {
-  white-space: normal;
-  overflow: auto;
-}
+.icon_dark{
+  fill: white !important;
+  /* filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(311deg) brightness(108%) contrast(102%); */
+}    
