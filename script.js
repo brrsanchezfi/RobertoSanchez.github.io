@@ -31,8 +31,6 @@ const iconLight = () => {
 }
 
 
-
-
 const changeTheme = () => {
   const theme = document.querySelector("body").getAttribute("data-bs-theme");
 
