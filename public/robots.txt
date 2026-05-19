@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://brrsanchezfi.github.io/sitemap.xml
