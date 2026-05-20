@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin, Mail, Terminal } from "lucide-react";
+import { Github, Linkedin, Mail, Terminal, Youtube } from "lucide-react";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -22,7 +22,7 @@ export default function Footer() {
 
           {/* Nav links */}
           <div className="flex flex-wrap gap-4 text-xs text-slate-500 justify-center">
-            {["#about", "#skills", "#experience", "#dkops", "#projects", "#contact"].map((href) => (
+            {["#about", "#skills", "#experience", "#dkops", "#projects", "#youtube", "#contact"].map((href) => (
               <a
                 key={href}
                 href={href}
@@ -56,6 +56,14 @@ export default function Footer() {
               className="text-slate-500 hover:text-brand-purple transition-colors"
             >
               <Mail size={18} />
+            </a>
+            <a
+              href="https://www.youtube.com/@banana_code"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-500 hover:text-red-500 transition-colors"
+            >
+              <Youtube size={18} />
             </a>
           </div>
         </div>

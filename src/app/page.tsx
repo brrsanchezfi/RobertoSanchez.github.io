@@ -6,6 +6,7 @@ import Experience from "@/components/Experience";
 import DKOps from "@/components/DKOps";
 import Projects from "@/components/Projects";
 import Certifications from "@/components/Certifications";
+import YouTubeSection from "@/components/YouTube";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <DKOps />
         <Projects />
         <Certifications />
+        <YouTubeSection />
         <Contact />
       </main>
       <Footer />

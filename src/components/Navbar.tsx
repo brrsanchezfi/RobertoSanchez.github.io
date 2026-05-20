@@ -10,6 +10,7 @@ const navItems = [
   { label: "Experiencia", href: "#experience" },
   { label: "DKOps", href: "#dkops" },
   { label: "Proyectos", href: "#projects" },
+  { label: "YouTube", href: "#youtube" },
   { label: "Contacto", href: "#contact" },
 ];
 

@@ -51,7 +51,7 @@ export default function Contact() {
         transition={{ duration: 0.6 }}
         className="text-center mb-12"
       >
-        <p className="section-subtitle">07 · contacto</p>
+        <p className="section-subtitle">08 · contacto</p>
         <h2 className="section-title">
           Trabajemos{" "}
           <span className="gradient-text">juntos</span>
